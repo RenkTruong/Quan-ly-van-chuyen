@@ -1,0 +1,6 @@
+{
+  "name": "LogisTMS - Hệ Thống Quản Lý Vận Chuyển & Bảng Giá",
+  "description": "Hệ thống quản lý bảng giá khách hàng & vendor đa hình thức (khối, chuyến, tấn), điều hành vận tải hàng ngày, tự động tính phụ phí rớt điểm, phân tích doanh thu lợi nhuận và phân quyền chi tiết.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
