@@ -32,8 +32,7 @@ export type ActiveTab =
   | 'vendors'
   | 'operations'
   | 'reports'
-  | 'users'
-  | 'clarifications';
+  | 'users';
 
 interface AppContextType {
   currentUser: SystemUser;

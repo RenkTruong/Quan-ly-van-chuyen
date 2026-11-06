@@ -11,7 +11,6 @@ import {
   ChevronDown,
   RotateCcw,
   Sparkles,
-  HelpCircle,
   Clock,
 } from 'lucide-react';
 import { formatVND } from '../utils/pricingEngine';
@@ -25,7 +24,6 @@ export const Header: React.FC = () => {
     markNotificationRead,
     markAllNotificationsRead,
     resetAllData,
-    setCurrentTab,
   } = useApp();
 
   const [showUserMenu, setShowUserMenu] = useState(false);
@@ -93,18 +91,6 @@ export const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Zone 2: Fast navigation indicator & Clarification shortcut */}
-      <div className="hidden xl:flex items-center gap-2 text-xs text-slate-500">
-        <button
-          onClick={() => setCurrentTab('clarifications')}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 transition-colors cursor-pointer"
-        >
-          <HelpCircle className="w-3.5 h-3.5 text-amber-600" />
-          <span className="font-medium">Điểm Thảo Luận Nghiệp Vụ & Hỏi Đáp</span>
-        </button>
-      </div>
-
-      {/* Zone 3: Actions, Quick Switcher, Notification Bell & Current Profile */}
       <div className="flex items-center gap-3">
         {/* Reset Demo Data Button */}
         <button

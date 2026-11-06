@@ -8,7 +8,6 @@ import {
   ClipboardList,
   BarChart3,
   Users2,
-  HelpCircle,
   ShieldCheck,
   ChevronRight,
   Info,
@@ -83,15 +82,6 @@ export const Sidebar: React.FC = () => {
       label: 'Phân Quyền & Bảo Mật',
       sublabel: 'Ma trận quyền, Login & Audit log',
       icon: Users2,
-    },
-    {
-      id: 'clarifications',
-      moduleKey: 'dashboard',
-      label: 'Góc Thảo Luận Chi Tiết',
-      sublabel: 'Ghi chú & Câu hỏi nghiệp vụ',
-      icon: HelpCircle,
-      badge: 'Cần duyệt',
-      badgeColor: 'bg-amber-100 text-amber-800 font-bold',
     },
   ];
 

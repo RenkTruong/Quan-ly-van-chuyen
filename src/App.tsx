@@ -8,7 +8,6 @@ import { OperationsView } from './components/OperationsView';
 import { ReportsView } from './components/ReportsView';
 import { UserManagementView } from './components/UserManagementView';
 import { VendorManagementView } from './components/VendorManagementView';
-import { ClarificationHubModal } from './components/ClarificationHubModal';
 import { BlockedScreen } from './components/BlockedScreen';
 import {
   LayoutDashboard,
@@ -18,7 +17,6 @@ import {
   ClipboardList,
   BarChart3,
   Users2,
-  HelpCircle,
 } from 'lucide-react';
 
 const MainLayout: React.FC = () => {
@@ -108,14 +106,6 @@ const MainLayout: React.FC = () => {
                 Phân quyền
               </button>
             )}
-            <button
-              onClick={() => setCurrentTab('clarifications')}
-              className={`px-3 py-1.5 text-xs font-semibold rounded-lg whitespace-nowrap cursor-pointer ${
-                currentTab === 'clarifications' ? 'bg-amber-600 text-white' : 'bg-white text-amber-800'
-              }`}
-            >
-              Thảo luận
-            </button>
           </div>
 
           {/* Role Check: If user has 'blocked' role, render BlockedScreen */}
@@ -130,7 +120,6 @@ const MainLayout: React.FC = () => {
               {currentTab === 'operations' && <OperationsView />}
               {currentTab === 'reports' && <ReportsView />}
               {currentTab === 'users' && <UserManagementView />}
-              {currentTab === 'clarifications' && <ClarificationHubModal />}
             </>
           )}
         </main>
